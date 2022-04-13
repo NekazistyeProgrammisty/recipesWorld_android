@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardBack"
+    android:layout_width="wrap_content"
+    android:layout_height="210dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginLeft="30dp"
+        android:layout_width="153dp"
+        android:layout_height="190dp"
+        android:layout_gravity="center|center_horizontal"
+        app:cardBackgroundColor="#FF6E69"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10dp">
+
+        <ImageView
+
+            android:layout_width="145dp"
+            android:layout_height="99dp"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="6dp"
+            />
+
+        <TextView
+            android:layout_width="119dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom|left"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="55dp"
+
+            android:fontFamily="sans-serif-condensed-medium"
+
+            android:textColor="@color/white" />
+
+        <ImageButton
+            android:id="@+id/buttonReverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:background="#FF6E69"
+            android:rotationX="-4"
+            android:src="@android:drawable/ic_menu_rotate"
+            android:text="Button" />
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
